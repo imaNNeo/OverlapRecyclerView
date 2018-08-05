@@ -22,19 +22,34 @@ class MainActivity : AppCompatActivity() {
         rv_content.addItemDecoration(OverlapDecoration(overlapRadius))
 
         val items = listOf(
-                "https://picsum.photos/400/400?image=1",
-                "https://picsum.photos/400/400?image=2",
-                "https://picsum.photos/400/400?image=3",
-                "https://picsum.photos/400/400?image=4",
-                "https://picsum.photos/400/400?image=5",
-                "https://picsum.photos/400/400?image=6",
-                "https://picsum.photos/400/400?image=7",
-                "https://picsum.photos/400/400?image=8",
-                "https://picsum.photos/400/400?image=9",
-                "https://picsum.photos/400/400?image=10"
+                "https://picsum.photos/500/500?image=10",
+                "https://picsum.photos/500/500?image=20",
+                "https://picsum.photos/500/500?image=30",
+                "https://picsum.photos/500/500?image=40",
+                "https://picsum.photos/500/500?image=50",
+                "https://picsum.photos/500/500?image=60",
+                "https://picsum.photos/500/500?image=70",
+                "https://picsum.photos/500/500?image=80",
+                "https://picsum.photos/500/500?image=90",
+                "https://picsum.photos/500/500?image=1"
         )
         mAdapter.resetItems(items)
 
+
+
+
+        val curveRadius = resources.getDimensionPixelSize(R.dimen.curve_radius)
+        GlideApp.with(this)
+                .load(items[0])
+                .transform(CircleCurveTransformation(curveRadius))
+                .into(iv_sample1)
+
+
+
+        GlideApp.with(this)
+                .load(items[3])
+                .transform(CircleCurveTransformation(curveRadius * 3))
+                .into(iv_sample2)
     }
 
 }
