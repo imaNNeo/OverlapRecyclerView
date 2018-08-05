@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="images_size">82dp</dimen>
+
+    <dimen name="overlap_radius">14dp</dimen>
+    <dimen name="curve_radius">20dp</dimen>
+</resources>
