@@ -1,3 +1,3 @@
 # Overlap RecyclervView
 
-<img src="./repo_files/demoo.gif" width="300">
+<img src="./repo_files/demo.gif" width="300">
